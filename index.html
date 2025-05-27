@@ -1,14 +1,221 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Resume/CV</title>
-    </head>
-        <h1>Malik Alimohamed</h1>
-        Hello! Welcome to my website
-        <ul>
-            <li><a href="https://malik-a-99.github.io/myWebsite/aboutMe.html">About me</a></li>
-            <li><a href="https://malik-a-99.github.io/myWebsite/accomplishments.html">Accomplishments</a></li>
-            <li><a href="https://malik-a-99.github.io/myWebsite/contactInfo.html">Contact</a></li>
-        </ul>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Curriculum Vitae</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for print and general layout */
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+        @media print {
+            body {
+                font-size: 10pt;
+                -webkit-print-color-adjust: exact; /* For better color printing */
+            }
+            .no-print {
+                display: none !important;
+            }
+            .page-break {
+                page-break-before: always;
+            }
+        }
+        /* Ensure max-width is applied even on smaller screens */
+        .cv-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden; /* Ensures shadow is contained */
+        }
+        /* List styling for skills/bullet points */
+        ul {
+            list-style: none; /* Remove default bullets */
+            padding-left: 0;
+        }
+        ul li:before {
+            content: "•"; /* Custom bullet point */
+            color: #2563eb; /* Blue color for bullets */
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 p-4 sm:p-6">
+    <div class="cv-container p-6 sm:p-8 md:p-10">
+
+        <header class="text-center pb-6 border-b-2 border-gray-200 mb-6">
+            <div class="flex flex-col sm:flex-row items-center justify-center mb-4">
+                <img src="https://raw.githubusercontent.com/Malik-A-99/myWebsite/refs/heads/main/images/24-R129-070.JPG" alt="Profile Picture" class="w-24 h-24 rounded-full object-cover mb-4 sm:mb-0 sm:mr-4 shadow-md">
+                
+                <div>
+                    <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-800 mb-2">Malik Alimohamed</h1>
+                </div>
+            </div>
+            
+            <div class="flex flex-wrap justify-center gap-x-4 gap-y-2 mt-4 text-gray-700 text-sm sm:text-base">
+                <a href="mailto:m.alimohamed23@gmail.com" class="flex items-center hover:text-blue-600 transition-colors">
+                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    m.alimohamed23@gmail.com
+                </a>
+                <a href="tel:778-838-0598" class="flex items-center hover:text-blue-600 transition-colors">
+                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                    778-838-0598
+                </a>
+                <a href="https://www.linkedin.com/in/malik-alimohamed-544029197/" target="_blank" class="flex items-center hover:text-blue-600 transition-colors">
+                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+                    LinkedIn
+                </a>
+                <a href="https://github.com/Malik-A-99" target="_blank" class="flex items-center hover:text-blue-600 transition-colors">
+                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.6.11.82-.26.82-.577 0-.285-.01-1.04-.015-2.04-3.34.725-4.043-1.61-4.043-1.61-.546-1.387-1.332-1.758-1.332-1.758-1.09-.745.08-.73.08-.73 1.205.085 1.838 1.238 1.838 1.238 1.07 1.834 2.807 1.302 3.49.996.108-.775.42-1.302.762-1.603-2.665-.3-5.464-1.332-5.464-5.93 0-1.31.465-2.38 1.235-3.22-.125-.3-.535-1.52.117-3.176 0 0 1-.32 3.3 1.23.957-.266 1.98-.4 3-.404 1.02.004 2.043.138 3 .404 2.29-1.55 3.29-1.23 3.29-1.23.653 1.656.243 2.875.118 3.176.77.84 1.233 1.91 1.233 3.22 0 4.61-2.8 5.625-5.475 5.922.42.36.81 1.096.81 2.22 0 1.606-.015 2.89-.015 3.28 0 .318.21.69.825.577C20.565 21.8 24 17.3 24 12c0-6.627-5.373-12-12-12z"></path></svg>
+                    GitHub
+                </a>
+                <!-- <a href="[YOUR_PERSONAL_WEBSITE_URL]" target="_blank" class="flex items-center hover:text-blue-600 transition-colors">
+                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                    Website
+                </a> -->
+            </div>
+        </header>
+
+        <section class="mb-6">
+            <h2 class="text-2xl font-bold text-gray-700 mb-3 border-b-2 border-gray-200 pb-2">Summary</h2>
+            <p class="text-gray-700 text-base">
+                [A concise paragraph (3-5 sentences) summarizing your professional goals, key skills, and most significant achievements. Tailor this to the specific job you are applying for.]
+                Example: "Highly motivated and results-oriented Software Engineer with 5+ years of experience in developing robust web applications using modern JavaScript frameworks. Proven ability to lead cross-functional teams, optimize performance, and deliver high-quality solutions. Seeking to leverage strong technical skills and passion for innovation to contribute to a dynamic team."
+            </p>
+        </section>
+
+        <section class="mb-6">
+            <h2 class="text-2xl font-bold text-gray-700 mb-3 border-b-2 border-gray-200 pb-2">Technical Skills</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-2 text-gray-700 text-base">
+                <div>
+                    <strong class="text-gray-800">Programming Languages:</strong> Python (Intermediate), JavaScript (Intermediate), Arduino C (Beginner)
+                </div>
+                <div>
+                    <strong class="text-gray-800">Web Technologies:</strong> HTML5, CSS, JavaScript
+                </div>
+                <div>
+                    <strong class="text-gray-800">Databases:</strong> MySQL (Beginner)
+                </div>
+                <div>
+                    <strong class="text-gray-800">Tools & Platforms:</strong> Github, Azure, VS Code, LM Studio
+                </div>
+                <div>
+                    <strong class="text-gray-800">Other:</strong> LM Studio API, AI Language Model Integration (ollama, DeepSeek)
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-6">
+            <h2 class="text-2xl font-bold text-gray-700 mb-3 border-b-2 border-gray-200 pb-2">Work Experience</h2>
+
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold text-gray-800">Private(B) at Canadian Armed Forces</h3>
+                <p class="text-gray-600 text-sm mb-2">Saint-Jean, QC | August 2024 – November 2024</p>
+                <ul class="list-disc ml-5 text-gray-700 text-base">
+                    <li>Completed my basic military qualification for the Canadian Armed Forces</li>
+                    <li>Cleaned personal room and common areas for inspections, Ensured every piece of equipment was cared and accounted for and secured</li>
+                    <li>Lead Section (1 Section) on a search and rescue training mission in Farnham</li>
+                </ul>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold text-gray-800">Sales Associate at Staples Canada</h3>
+                <p class="text-gray-600 text-sm mb-2">Coquitlam, BC | February 2022 – September 2022</p>
+                <ul class="list-disc ml-5 text-gray-700 text-base">
+                    <li>Sold desktops, laptops, and other computer accessories based on the customers needs</li>
+                    <li>Assisted customers with computer hardware, and software related issues</li>
+                    <li>Troubleshooted,diagnosed and installed computer hardware</li>
+                    <li>Gained experience with their POS system, and inventory system with digital scanners</li>
+                </ul>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold text-gray-800">Merchandiser/Warehouse Associate at Summit Tools</h3>
+                <p class="text-gray-600 text-sm mb-2">Port Coquitlam, BC | June 2015 – August 2020</p>
+                <ul class="list-disc ml-5 text-gray-700 text-base">
+                    <li>Merchandised inventory onto the sales floor</li>
+                    <li>Managed warehouse inventory being shipped, received, and organized</li>
+                    <li>Operated electric forklift in a training capacity</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="mb-6">
+            <h2 class="text-2xl font-bold text-gray-700 mb-3 border-b-2 border-gray-200 pb-2">Projects</h2>
+
+            <div class="mb-4">
+                <h3 class="text-xl font-semibold text-gray-800">
+                    Pause Elden Ring (Frostbite)
+                    <span class="text-base font-normal text-blue-600 ml-2">
+                        <a href="https://github.com/Malik-A-99/PauseEldenRing" target="_blank" class="hover:underline">GitHub Repo</a>
+                    </span>
+                </h3>
+                <p class="text-gray-600 text-sm mb-2">[Start Date] – [End Date]</p>
+                <ul class="list-disc ml-5 text-gray-700 text-base">
+                    <li>[Brief description of the project and its purpose. e.g., "Developed a full-stack e-commerce application using React, Node.js, and MongoDB."]</li>
+                    <li>[Your specific contributions and technologies used. e.g., "Implemented user authentication, product catalog, and payment gateway integration."]</li>
+                    <li>[Key outcome or learning. e.g., "Improved my understanding of secure API design and database schema optimization."]</li>
+                </ul>
+            </div>
+
+            <div class="mb-4">
+                <h3 class="text-xl font-semibold text-gray-800">
+                    [PROJECT NAME]
+                    <span class="text-base font-normal text-blue-600 ml-2">
+                        <a href="[PROJECT_LIVE_DEMO_URL]" target="_blank" class="hover:underline">Live Demo</a> |
+                        <a href="[PROJECT_GITHUB_REPO_URL]" target="_blank" class="hover:underline">GitHub Repo</a>
+                    </span>
+                </h3>
+                <p class="text-gray-600 text-sm mb-2">[Start Date] – [End Date]</p>
+                <ul class="list-disc ml-5 text-gray-700 text-base">
+                    <li>[Description of project]</li>
+                    <li>[Your contributions]</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="mb-6">
+            <h2 class="text-2xl font-bold text-gray-700 mb-3 border-b-2 border-gray-200 pb-2">Education</h2>
+
+            <div class="mb-4">
+                <h3 class="text-xl font-semibold text-gray-800">[DEGREE/CERTIFICATE NAME]</h3>
+                <p class="text-gray-700">[MAJOR, e.g., Computer Science]</p>
+                <p class="text-gray-600 text-sm mb-2">[UNIVERSITY/INSTITUTION NAME] | [City, State] | [Graduation Date]</p>
+                <ul class="list-disc ml-5 text-gray-700 text-base">
+                    <li>[Relevant coursework or thesis, e.g., "Relevant Coursework: Data Structures, Algorithms, Web Development, Database Systems"]</li>
+                    <li>[Honors, awards, or GPA (if impressive), e.g., "GPA: 3.8/4.0, Dean's List"]</li>
+                </ul>
+            </div>
+
+            <div class="mb-4">
+                <h3 class="text-xl font-semibold text-gray-800">[ADDITIONAL DEGREE/CERTIFICATE]</h3>
+                <p class="text-gray-700">[INSTITUTION NAME] | [City, State] | [Completion Date]</p>
+            </div>
+        </section>
+
+        <section class="mb-6">
+            <h2 class="text-2xl font-bold text-gray-700 mb-3 border-b-2 border-gray-200 pb-2">Awards & Certifications</h2>
+            <ul class="list-disc ml-5 text-gray-700 text-base">
+                <li>[Award Name] - [Issuing Organization] ([Date])</li>
+                <li>[Certification Name] - [Issuing Organization] ([Date])</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="text-2xl font-bold text-gray-700 mb-3 border-b-2 border-gray-200 pb-2">Interests</h2>
+            <p class="text-gray-700 text-base">
+                [List a few relevant and professional interests that show personality, e.g., "Hiking, Photography, Open-Source Contributions, Learning New Technologies."]
+            </p>
+        </section>
+
+    </div>
+</body>
 </html>
